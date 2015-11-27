@@ -13,8 +13,21 @@
 		4908EAEE1C074526002B291C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4908EAED1C074526002B291C /* Assets.xcassets */; };
 		4908EAF11C074526002B291C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4908EAEF1C074526002B291C /* LaunchScreen.storyboard */; };
 		4908EAF91C07518B002B291C /* configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4908EAF81C07518B002B291C /* configuration.json */; };
+		4908EB011C0856E4002B291C /* NightsWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908EB001C0856E4002B291C /* NightsWatchTests.swift */; };
+		4908EB081C0857D6002B291C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4908EAE81C074526002B291C /* ViewController.swift */; };
+		4908EB0A1C08588D002B291C /* test-configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 4908EB091C08588D002B291C /* test-configuration.json */; };
 		E59347D156A7046FD90921EC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12FE44B25EC2623BC3B01F82 /* Pods.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4908EB031C0856E4002B291C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4908EADB1C074526002B291C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4908EAE21C074526002B291C;
+			remoteInfo = NightsWatch;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		12FE44B25EC2623BC3B01F82 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +39,10 @@
 		4908EAF01C074526002B291C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4908EAF21C074526002B291C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4908EAF81C07518B002B291C /* configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = configuration.json; sourceTree = "<group>"; };
+		4908EAFE1C0856E4002B291C /* NightsWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NightsWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4908EB001C0856E4002B291C /* NightsWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightsWatchTests.swift; sourceTree = "<group>"; };
+		4908EB021C0856E4002B291C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4908EB091C08588D002B291C /* test-configuration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "test-configuration.json"; sourceTree = "<group>"; };
 		D59D4F0A19C1DF62509B6C09 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E21322D6D48C9DC256E56B23 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,6 +56,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4908EAFB1C0856E4002B291C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -46,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				4908EAE51C074526002B291C /* NightsWatch */,
+				4908EAFF1C0856E4002B291C /* NightsWatchTests */,
 				4908EAE41C074526002B291C /* Products */,
 				4DA9627D9235ED594671396B /* Pods */,
 				6A5C53380E5BD3FA8FDF7B60 /* Frameworks */,
@@ -56,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				4908EAE31C074526002B291C /* NightsWatch.app */,
+				4908EAFE1C0856E4002B291C /* NightsWatchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +98,16 @@
 				4908EAF21C074526002B291C /* Info.plist */,
 			);
 			path = NightsWatch;
+			sourceTree = "<group>";
+		};
+		4908EAFF1C0856E4002B291C /* NightsWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				4908EB091C08588D002B291C /* test-configuration.json */,
+				4908EB001C0856E4002B291C /* NightsWatchTests.swift */,
+				4908EB021C0856E4002B291C /* Info.plist */,
+			);
+			path = NightsWatchTests;
 			sourceTree = "<group>";
 		};
 		4DA9627D9235ED594671396B /* Pods */ = {
@@ -114,6 +150,24 @@
 			productReference = 4908EAE31C074526002B291C /* NightsWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4908EAFD1C0856E4002B291C /* NightsWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4908EB071C0856E4002B291C /* Build configuration list for PBXNativeTarget "NightsWatchTests" */;
+			buildPhases = (
+				4908EAFA1C0856E4002B291C /* Sources */,
+				4908EAFB1C0856E4002B291C /* Frameworks */,
+				4908EAFC1C0856E4002B291C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4908EB041C0856E4002B291C /* PBXTargetDependency */,
+			);
+			name = NightsWatchTests;
+			productName = NightsWatchTests;
+			productReference = 4908EAFE1C0856E4002B291C /* NightsWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,6 +180,10 @@
 				TargetAttributes = {
 					4908EAE21C074526002B291C = {
 						CreatedOnToolsVersion = 7.1.1;
+					};
+					4908EAFD1C0856E4002B291C = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 4908EAE21C074526002B291C;
 					};
 				};
 			};
@@ -143,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				4908EAE21C074526002B291C /* NightsWatch */,
+				4908EAFD1C0856E4002B291C /* NightsWatchTests */,
 			);
 		};
 /* End PBXProject section */
@@ -156,6 +215,14 @@
 				4908EAEE1C074526002B291C /* Assets.xcassets in Resources */,
 				4908EAF91C07518B002B291C /* configuration.json in Resources */,
 				4908EAEC1C074526002B291C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4908EAFC1C0856E4002B291C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4908EB0A1C08588D002B291C /* test-configuration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +286,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4908EAFA1C0856E4002B291C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4908EB081C0857D6002B291C /* ViewController.swift in Sources */,
+				4908EB011C0856E4002B291C /* NightsWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4908EB041C0856E4002B291C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4908EAE21C074526002B291C /* NightsWatch */;
+			targetProxy = 4908EB031C0856E4002B291C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4908EAEA1C074526002B291C /* Main.storyboard */ = {
@@ -346,6 +430,30 @@
 			};
 			name = Release;
 		};
+		4908EB051C0856E4002B291C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NightsWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WebComrades.NightsWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NightsWatch.app/NightsWatch";
+			};
+			name = Debug;
+		};
+		4908EB061C0856E4002B291C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NightsWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WebComrades.NightsWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NightsWatch.app/NightsWatch";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -366,6 +474,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4908EB071C0856E4002B291C /* Build configuration list for PBXNativeTarget "NightsWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4908EB051C0856E4002B291C /* Debug */,
+				4908EB061C0856E4002B291C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

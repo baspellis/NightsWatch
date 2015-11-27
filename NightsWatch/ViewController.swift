@@ -17,37 +17,37 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        loadConfiguration();
+        setupView()
+    }
+    
+    func setupView() {
+        if let configuration = loadConfiguration() {
+            let backgroundColor = UIColor(hex: configuration["background"].stringValue)
+            view.backgroundColor = backgroundColor
+            
+            let textColor = UIColor(hex: configuration["text"].stringValue)
+            nameLabel.textColor = textColor
+            subtitleLabel.textColor = textColor
+            textView.textColor = textColor
+            
+            let name = configuration["name"].stringValue
+            nameLabel.text = name
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    func loadConfiguration() {
-        if let path = NSBundle.mainBundle().pathForResource("configuration", ofType: "json") {
+    func loadConfiguration(name resourceName: String? = "configuration", bundle: NSBundle = NSBundle.mainBundle()) -> JSON? {
+        if let path = bundle.pathForResource(resourceName, ofType: "json") {
             if let data = NSData.init(contentsOfFile: path) {
-                let config = JSON(data: data);
-                let backgroundColor = UIColor(hex: config["background"].stringValue);
-                view.backgroundColor = backgroundColor;
-                
-                let textColor = UIColor(hex: config["text"].stringValue)
-                nameLabel.textColor = textColor;
-                subtitleLabel.textColor = textColor;
-                textView.textColor = textColor;
-                
-                let name = config["name"].stringValue;
-                nameLabel.text = name;
+                return JSON(data: data)
             }
             else {
-                print("Error: Couldn't read configuration file");
+                print("Error: Couldn't read configuration file")
             }
         }
         else {
-            print("Error: Configuration file not found");
+            print("Error: Configuration file not found")
         }
+        return nil
     }
 }
 
